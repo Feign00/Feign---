@@ -80,8 +80,3 @@
     50% { transform: translateX(-66.6666%); }
     75% { transform: translateX(-100%); }
 }
-
-/* 保持原有footer样式 */
-footer {
-    /* 原有样式保持不变 */
-}
