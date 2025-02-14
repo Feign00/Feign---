@@ -45,6 +45,8 @@
     border-radius: 10px;
     margin-bottom: 20px;
     /* 后续添加背景图样式 */
+    cursor: pointer; /* 添加鼠标指针样式 */
+    transition: background-color 0.3s ease; /* 添加过渡效果 */
 }
 
 .projects-carousel {
@@ -79,4 +81,63 @@
     25% { transform: translateX(-33.3333%); }
     50% { transform: translateX(-66.6666%); }
     75% { transform: translateX(-100%); }
+}
+.home-button {
+    position: absolute;
+    top: 70px;
+    left: 150px; /* 根据头像的宽度和位置调整 */
+    padding: 10px 20px;
+    background-color: transparent;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    box-shadow: none; 
+}
+
+.home-button:hover {
+    color: #007bff;
+}
+
+.projects-carousel:hover .carousel-track {
+    animation-play-state: paused;
+}
+
+@media (max-width: 768px) {
+    .sidebar {
+        width: 100%;
+        position: static;
+    }
+    .avatar-container {
+        position: static;
+        margin: 20px auto;
+    }
+    .home-button {
+        position: static;
+        margin: 10px auto;
+        display: block;
+    }
+    .content {
+        padding: 10px;
+    }
+    .featured-project {
+        height: 50vh;
+    }
+    .projects-carousel {
+        height: 20vh;
+    }
+}
+
+.quote {
+    position: absolute;
+    top: 50%; /* 垂直居中 */
+    left: 50%; /* 水平居中 */
+    transform: translate(-50%, -50%); /* 精确居中 */
+    font-size: 1.5em; /* 字体大小 */
+    color: #333; /* 字体颜色 */
+    font-family: 'Georgia', serif; /* 字体样式 */
+    font-style: italic; /* 斜体 */
+    text-align: center; /* 文本居中 */
+    white-space: nowrap; /* 防止换行 */
 }

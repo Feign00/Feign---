@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>星际门</title>
+    <title>Feign星际门</title>
     <link rel="stylesheet" href="modal.css">
 </head>
 <body>
@@ -12,14 +12,16 @@
         <!-- 左侧区域 -->
         <aside class="sidebar">
             <div class="avatar-container">
-                <img src="your-avatar.jpg" alt="我的头像" class="avatar">
+                <img src="Feign.png" alt="我的头像" class="avatar">
             </div>
+            <button class="home-button" onclick="window.location.href='index.html'">首页</button>  
+            <div class="quote">代码如诗，简洁即美。</div>  
         </aside>
 
         <!-- 右侧区域 -->
         <main class="content">
             <!-- 主展示区 -->
-            <section class="featured-project">
+            <section class="featured-project" id="featuredProject" onclick="window.location.href='featured-project.html'">
                 <!-- 这里放主项目内容 -->
             </section>
 
@@ -35,8 +37,10 @@
         </main>
     </div>
 
-    <footer>
-        <p><a href="http://beian.miit.gov.cn/" target="_blank" id="beian-link">陇ICP备2025016955号</a></p>
+    <footer style="text-align: center;">
+        <p style="display: inline-block;">© 2025 Feign</p>
+        <p style="display: inline-block;" style="text-align: center"><a href="https://beian.miit.gov.cn/" target="_blank" id="beian-link">陇ICP备2025016955号</a></p>
     </footer>
+    <script src="script.js"></script>
 </body>
 </html>
