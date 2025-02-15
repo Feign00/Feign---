@@ -1,4 +1,3 @@
-<!-- index.html -->
 <!DOCTYPE html>
 <html lang="zh-CN">
 <head>
@@ -6,41 +5,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Feign星际门</title>
     <link rel="stylesheet" href="modal.css">
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script src="https://unpkg.com/vue-router@4"></script>
 </head>
 <body>
-    <div class="container">
-        <!-- 左侧区域 -->
-        <aside class="sidebar">
-            <div class="avatar-container">
-                <img src="Feign.png" alt="我的头像" class="avatar">
-            </div>
-            <button class="home-button" onclick="window.location.href='index.html'">首页</button>  
-            <div class="quote">代码如诗，简洁即美。</div>  
-        </aside>
-
-        <!-- 右侧区域 -->
-        <main class="content">
-            <!-- 主展示区 -->
-            <section class="featured-project" id="featuredProject" onclick="window.location.href='featured-project.html'">
-                <!-- 这里放主项目内容 -->
-            </section>
-
-            <!-- 小项目轮换区 -->
-            <div class="projects-carousel">
-                <div class="carousel-track">
-                    <div class="project-item">项目1</div>
-                    <div class="project-item">项目2</div>
-                    <div class="project-item">项目3</div>
-                    <!-- 后续可继续添加 -->
+    <div id="app">
+        <div class="container">
+            <!-- 左侧区域 -->
+            <aside class="sidebar">
+                <div class="avatar-container">
+                    <img src="Feign.png" alt="我的头像" class="avatar">
                 </div>
-            </div>
-        </main>
+                <button class="home-button" @click="goHome">首页</button>  
+                <div class="quote">代码如诗，简洁即美。</div>  
+            </aside>
+
+            <!-- 右侧区域 -->
+            <main class="content">
+                <router-view></router-view>
+            </main>
+        </div>
+
+        <footer style="text-align: center;">
+            <p style="display: inline-block;">© 2025 Feign</p>
+            <p style="display: inline-block;" style="text-align: center"><a href="https://beian.miit.gov.cn/" target="_blank" id="beian-link">陇ICP备2025016955号</a></p>
+        </footer>
     </div>
 
-    <footer style="text-align: center;">
-        <p style="display: inline-block;">© 2025 Feign</p>
-        <p style="display: inline-block;" style="text-align: center"><a href="https://beian.miit.gov.cn/" target="_blank" id="beian-link">陇ICP备2025016955号</a></p>
-    </footer>
     <script src="script.js"></script>
 </body>
 </html>
