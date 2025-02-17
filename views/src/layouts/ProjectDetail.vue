@@ -16,21 +16,21 @@ export default {
                 {
                     id: 1,
                     title: '项目1',
-                    image: '/assets/Feign.png',
+                    image: require('@/assets/images/Feign.png'),
                     description: '这是项目1的描述',
                     details: '项目1的详细信息'
                 },
                 {
                     id: 2,
                     title: '项目2',
-                    image: '/assets/Feign.png',
+                    image: require('@/assets/images/Feign.png'),
                     description: '这是项目2的描述',
                     details: '项目2的详细信息'
                 },
                 {
                     id: 3,
                     title: '项目3',
-                    image: '/assets/Feign.png',
+                    image: require('@/assets/images/Feign.png'),
                     description: '这是项目3的描述',
                     details: '项目3的详细信息'
                 }

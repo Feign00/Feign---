@@ -1,22 +1,18 @@
 import Vue from 'vue';
-import Router from 'vue-router';
-import Home from '../views/Home.vue';
-import ProjectDetail from '../views/ProjectDetail.vue';
+import VueRouter from 'vue-router';
 
-Vue.use(Router);
+Vue.use(VueRouter);
 
-export default new Router({
-    mode: 'history',
-    routes: [
-        {
-            path: '/',
-            name: 'home',
-            component: Home
-        },
-        {
-            path: '/project/:id',
-            name: 'project-detail',
-            component: ProjectDetail
-        }
-    ]
+const routes = [
+  { 
+    path: '/', 
+    component: () => import('@/views/Home.vue') // 使用动态导入以提高性能
+  }
+];
+
+// 使用 history 模式以去除 URL 中的 # 符号
+export default new VueRouter({
+  mode: 'history', 
+  routes,
+  base: '/', // 确保 Vercel 支持 history 模式
 });
