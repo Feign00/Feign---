@@ -26,16 +26,12 @@ const ProjectDetail = {
     template: `
         <div class="featured-project-details">
             <h1>主项目标题</h1>
-            <img src="project-image.jpg" alt="项目图片" class="project-image">
-            <p>这里是主项目的详细描述，可以包括以下内容：</p>
-            <ul>
-                <li>项目背景</li>
-                <li>项目目标</li>
-                <li>项目特点</li>
-                <li>技术栈</li>
-                <li>项目成果</li>
-            </ul>
-            <p>更多信息可以在这里补充。</p>
+            <img src="imgs/Feign.png" alt="项目图片" class="project-image">
+            <p>这里是 Feign星际门的主项目内容，详细介绍项目的功能、特点和使用方法。</p>
+            <hr>
+            <p>通过nginx+uwsgi+django部署。</p>
+            <p>后续会更新完整步骤。</p>
+        </section>
         </div>
     `
 };
